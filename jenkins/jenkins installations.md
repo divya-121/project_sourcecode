@@ -12,24 +12,27 @@ Security Group with Port'8080' open for internet
 Go to jenkins official website
 Get the latest version of jenkins https://pkg.jenkins.io/redhat-stable/ and start installing
 
-To use this repository, run the following command:
+## To use this repository, run the following command:
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
-Install the latest version of java: 
+## Install the latest version of java: 
 yum install java -y #on redhat
-Start installing the jenkins:
+
+## Start installing the jenkins:
 yum install jenkins -y
 
 ### Start Jenkins
 Start the jenkins service:
-#enbling the service:
+
+## enabling the service:
 systemctl enable jenkins
 
-#starting the service:
+## starting the service:
 systemctl start jenkins
 
-To verify the service is up or not:
+## To verify the service is up or not:
 systemctl status jenkins
 
 ### Accessing Jenkins
